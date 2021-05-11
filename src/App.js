@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import Navbar from './components/Navbar';
+import React, { Component } from "react";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/pages/Home";
-import City from './components/pages/City';
-import moduleName, { RestaurantDetail } from './components/pages/RestaurantDetail';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import City from "./components/pages/City";
+import { RestaurantDetail } from "./components/pages/RestaurantDetail";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class App extends Component {
   render() {
@@ -12,8 +12,8 @@ class App extends Component {
       <Router>
         <Navbar />
         <Route path="/" exact component={Home} />
-        <Route path="/city/:city_id" component={City}/>
-        <Route path="/restaurant/:restaurant_id" component={RestaurantDetail}/>
+        <Route path="/city/:city_id" component={City} />
+        <Route path="/restaurant/:restaurant_id" component={RestaurantDetail} />
         <Footer />
       </Router>
     );
